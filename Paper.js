@@ -16,15 +16,18 @@ class Paper{
     }
     dislpay(){
         
-        push();
         var pos= this.body.position;
+        push();
+        translate(pos.x,pos.y);
+         rotate(pos.x,pos.y);
+        
         ellipseMode(CENTER);
-        ellipse(this.x,this.y,this.radius);
+        ellipse(0,0,this.radius);
         image(this.image,this.x,this.y,this.radius*2);
 
         
-        rotate(pos.x,pos.y);
-        translate(pos.x,pos.y)
+       
+        
          pop();
     }
  
