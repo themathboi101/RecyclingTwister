@@ -20,10 +20,10 @@ class Paper{
         push();
         translate(pos.x,pos.y);
          rotate(pos.x,pos.y);
-        
+       
         ellipseMode(CENTER);
         ellipse(0,0,this.radius);
-        image(this.image,this.x,this.y,this.radius*2);
+        image(this.image,0,0,this.radius*2);
 
         
        
